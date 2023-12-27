@@ -33,7 +33,7 @@ This Python-based console game is a simple implementation of the traditional Sto
 2. Navigate to the project directory:
 
    ```bash
-   cd Stone-Paper-Scissors
+   cd Stone-Paper-Scissor
    ```
 
 3. Run the Python script:
