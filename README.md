@@ -20,7 +20,7 @@ This Python-based console game is a simple implementation of the traditional Sto
 
 ### Prerequisites
 
-- Python (version X.X.X)
+- Python3.XX
 
 ### Usage
 
