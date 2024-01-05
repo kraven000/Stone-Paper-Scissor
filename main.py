@@ -1,4 +1,5 @@
 import random as ran
+from time import sleep
 
 def comp():
     return ran.randint(1,3)
@@ -41,6 +42,9 @@ if __name__=="__main__":
     print("Welcome to stone paper scissor game.\nFor stone enter 1\nFor paper enter 2\nFor scissor enter 3")
     for i in range(5):
         user = int(input("Enter:- "))
+        if user>3:
+            print("Invalid Input You Lose!!!")
+            break
         computer = comp()
         step = win_lose(user=user,comp=computer)
         if step==0:
@@ -59,11 +63,13 @@ if __name__=="__main__":
             print()
             tie += 1
     else:
-        if win>lose:
-            print("You won the match\n")
-        elif win<lose:
-            print("You lose the match\n")
-        elif win==lose:
-            print("You Tied the Match\n")
-
+        print("-"*70)
         print(f"Round Won:- {win}\nRound Lose:- {lose}\nRound Tied:- {tie}")
+        if win>lose:
+            print("Overall Result:- You won the match\n")
+        elif win<lose:
+            print("Overall Result:- You lose the match\n")
+        elif win==lose:
+            print("Overall Result:- You Tied the Match\n")
+        print("-"*70)
+        sleep(10)
